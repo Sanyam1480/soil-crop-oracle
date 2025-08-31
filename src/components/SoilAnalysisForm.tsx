@@ -121,7 +121,7 @@ export const SoilAnalysisForm = ({ onAnalyze, isAnalyzing }: SoilAnalysisFormPro
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-3">
               <Label className="text-sm font-semibold flex items-center gap-2">
-                <Droplets className="h-4 w-4 text-blue-500" />
+                <Droplets className="h-4 w-4 text-accent" />
                 Moisture Content: {soilData.moisture}%
               </Label>
               <Slider
@@ -135,7 +135,7 @@ export const SoilAnalysisForm = ({ onAnalyze, isAnalyzing }: SoilAnalysisFormPro
             </div>
             <div className="space-y-3">
               <Label className="text-sm font-semibold flex items-center gap-2">
-                <Thermometer className="h-4 w-4 text-red-500" />
+                <Thermometer className="h-4 w-4 text-destructive" />
                 Temperature: {soilData.temperature}°C
               </Label>
               <Slider
